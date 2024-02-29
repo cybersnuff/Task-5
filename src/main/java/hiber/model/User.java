@@ -30,10 +30,11 @@ public class User {
         this.car = car;
     }
 
-    public User(String firstName, String lastName, String email) {
+    public User(String firstName, String lastName, String email, Car car) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.email = email;
+        this.car = car;
     }
 
     public Long getId() {
@@ -66,6 +67,10 @@ public class User {
 
     public void setEmail(String email) {
         this.email = email;
+    }
+
+    public Car getCar() {
+        return car;
     }
 
     @Override
